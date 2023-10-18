@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/lib/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Projet SCSS: SPA33</title>
+</head>
+<body>
+    <header class=" stripmargin">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container">
+                          <a class="navbar-brand" href="#">
+                            <img src="assets/img/spa33-logo.png"  class="logonav" alt="Le logo">
+                          </a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="liensnav" href="#">ACCUEIL</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="liensnav" href="#">CHIEN</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="liensnav" href="#">CHAT</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="liensnav" href="#">A PROPOS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="liensnav" href="#">CONTACT</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="h1_fancy-style">BIENVENUE A LA SPA DE BORDEAUX ET DU SUD-OUEST</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 chien-adopt">
+                        <a href="#" class="button button-plus">
+                         Nos chiens à l'adoption
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 chat-adopt">
+                        <a href="#" class="button button-plus">
+                            Nos chats à l'adoption
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <section class="position3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center">
+                        <img src="/assets/img/adopter-un-acte-reflechi.svg" class="logosmain" alt="adopter est un acte réfléchi">
+                        <a href="#" class="button">
+                            Adopter est un acte réfléchi
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <img src="/assets/img/adopter-un-acte-reflechi.svg" class="logosmain" alt="adopter est un acte réfléchi">
+                        <a href="#" class="button">
+                            Adopter est un acte réfléchi
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <img src="/assets/img/adopter-un-acte-reflechi.svg" class="logosmain" alt="adopter est un acte réfléchi">
+                        <a href="#" class="button">
+                            Adopter est un acte réfléchi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="swiper_container ">
+            <!-- Swiper -->
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide pos1">
+                                    <img src="assets/img/C11-F-Rhodesian-Noir-Blanc-120520-Kila-6-274x363.jpg" alt="Kila">
+                                    <a href="#" class="pos2">Kila</a>
+                                </div>
+                                <div class="swiper-slide pos1">
+                                    <img src="assets/img/C11-F-Rhodesian-Noir-120521-Seilba-7-274x363.jpg"  alt="Seliba">
+                                    <a href="#" class="pos2">SELIBA</a>
+                                </div>
+                                <div class="swiper-slide pos1">
+                                    <img src="assets/img/C7-F-BA-Noir-Fauve-119916-Nouma-4-274x363.jpg" alt="FAUVE">
+                                    <a href="#" class="pos2">KILA</a>
+                                </div>
+                                <div class="swiper-slide pos1">
+                                    <img src="assets/img/B21-M-x-braque-119192-Marquis-4-274x363.jpg" alt="MARQUIS">
+                                    <a href="#" class="pos2">NOUMA</a>
+                                </div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                <div class="swiper-slide">Slide 8</div>
+                                <div class="swiper-slide">Slide 9</div>
+                            </div>
+                                <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Swiper JS -->
+             <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                });
+            </script>
+        </section>
+    </main>
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row bg_row">
+                <div class="col-12 text-center">
+                    <img src="assets/img/cnda-logo.png" alt="">
+                </div>
+                <div class="col-12 col-md-4 pos-txt1">
+                    <p><i class="fa-solid fa-circle-arrow-right"></i> Nous contacter</p>
+                    <p><i class="fa-solid fa-circle-arrow-right"></i> Mentions légales</p>                    
+                </div>
+                <div class="col-12 col-md-4 pos-txt2">
+                    <p>SPA de Bordeaux et du sud-ouest</p>
+                    <p>361 avenue de l'argonne, 33700 Mérignac</p>
+                </div>
+                <div class="col-12 col-md-4 pos-txt3">
+                    <p><i class="fa-brands fa-facebook-f lesi "></i></p>
+                    <p><i class="fa-brands fa-instagram lesi"></i></p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/374b1593ad.js" crossorigin="anonymous"></script>
+    <script src="assets/lib/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

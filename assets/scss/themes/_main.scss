@@ -1,0 +1,80 @@
+// partie1: la zone H1
+
+.h1_fancy-style {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: $normal;
+    margin: 50px 0px;
+    position: relative;
+}
+
+.h1_fancy-style:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    height: 2px;
+    width: 15%;
+    min-width: 65px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: $rose;
+}
+
+// Partie2: La zone adoption
+
+
+.chien-adopt {
+    background-image: url("/assets/img/chiens-adoption-spa.jpg");
+    width:45%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 1rem;
+    box-shadow: -11px 10px 14px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -11px 10px 14px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px 10px 14px -4px rgba(0,0,0,0.75);
+}
+
+
+.chat-adopt {
+    background-image: url("/assets/img/chats-adoption-spa.jpg");
+    width: 45%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 1rem;
+    box-shadow: -11px 10px 14px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -11px 10px 14px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px 10px 14px -4px rgba(0,0,0,0.75);
+}
+
+// partie3 :adopter, trouver et faire un don
+
+.position3 {
+    margin-top: 5rem;
+}
+
+// Swipper party !
+
+.pos1 {
+    display: flex;    
+    flex-direction: column;
+    position: relative;
+}
+.pos2 {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $claire;
+    padding: 5px 50px;
+    text-decoration: none;
+    color: $sombre;
+}
+
+

@@ -1,0 +1,17 @@
+@import 'components/buttons';
+@import 'components/icons';
+@import 'abstracts/variables';
+@import 'themes/header';
+@import 'themes/footer';
+@import 'themes/main';
+@import 'layouts/swiper';
+
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(../../fonts/Roboto-Regular.ttf);
+}
+
+body, header, footer {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}

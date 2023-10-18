@@ -1,0 +1,39 @@
+.bg-footer {
+    background-color: $bleuclair;
+    color: $claire;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.bg_row {
+    background-color: $color-liens-nav;
+    height: 250px;
+    padding: 20px;
+}
+
+.pos-txt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+.pos-txt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+}
+
+.pos-txt3 {
+    display: flex;
+    flex-direction:row;
+    justify-content:end;
+    align-items: flex-end;
+}
+
+
+.lesi {
+    padding-right: 15px;
+    font-size: 30px;
+
+}

@@ -1,0 +1,21 @@
+/* Style du bouton "animal à l'adoption" */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #22234F; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Style au survol du bouton */
+.button:hover {
+    background-color: #EB1E28; /* Couleur de fond au survol */
+}
+
+.button-plus {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}

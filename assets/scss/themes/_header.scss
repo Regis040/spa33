@@ -1,0 +1,39 @@
+
+.stripmargin {
+    border-bottom: 2px solid #f7f7f7;
+}
+
+.liensnav {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: $color-liens-nav;
+    font-weight: 400;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+/* Style de base du lien Chat GBT amélioré*/
+header a {
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    color: #000; /* Couleur du lien */
+    position: relative; /* Définir la position relative pour l'élément parent */
+}
+
+/* Pseudo-élément ::after pour le surlignement */
+header a::after {
+    content: ""; /* Ajouter un contenu vide */
+    position: absolute; /* Définir la position absolue pour le pseudo-élément */
+    width: 80%; /* Prendre toute la largeur du lien */
+    height: 2px; /* Hauteur du surlignement */
+    background-color: $rose; /* Couleur du surlignement */
+    bottom: -0.5rem; /* Placer le surlignement au bas du lien */
+    left: 1rem; /* Commencer le surlignement depuis le coin supérieur gauche */
+    transform: scaleX(0); /* Réduire la largeur du surlignement à zéro par défaut */
+    transform-origin: bottom left; /* Définir l'origine de transformation au coin inférieur gauche */
+    transition: transform 0.3s ease; /* Ajouter une transition pour l'animation */
+}
+
+/* Style lorsque vous survolez le lien */
+header a:hover::after {
+    transform: scaleX(1); /* Agrandir le surlignement pour le montrer au survol */
+}
